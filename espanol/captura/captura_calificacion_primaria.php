@@ -729,8 +729,6 @@
 			function calculate1(id){
 				var asist = document.getElementById(id);
 				var inputNum = id.split("asist")[1];
-				//var por = document.getElementById("por" + inputNum);
-				//var ina = document.getElementById("ina" + inputNum);
 				var clase = document.getElementById("clase");
 				if(parseFloat(asist.value) <= clase.value){
 					/*var otro1 = parseFloat((100/(claseI.value))*(asist.value)).toFixed(1);
@@ -1128,16 +1126,6 @@
 					var uno = decimal.substring(0,1);
 					var dos=entero+'.'+uno;
 					pese.value=dos;
-					//calificacion knotion
-					/*var calculo3 = parseFloat((parseFloat(kens.value) * 50)/10).toFixed(2);
-					arr = calculo3.split(".");  // declaro el array 
-					entero= arr[0];
-					decimal = arr[1];
-					uno = decimal.substring(0,1);
-					dos=entero+'.'+uno;
-					pkens.value=dos;*/
-					//suma porcentajes
-					//sumaese.value=parseFloat(parseFloat(pese.value) + parseFloat(pkens.value));
 					sumaese.value=parseFloat(parseFloat(pese.value));
 					var calculo4 = parseFloat(((parseFloat(pese.value))*20)/100).toFixed(2);
 					var arr = calculo4.split(".");  // declaro el array 
